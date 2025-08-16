@@ -31,7 +31,7 @@ CountriesExplorer.sln
 ├─ Infrastructure/             # Implementações de infraestrutura
 │  ├─ Services/                # Implementação de serviços HTTP, repositórios
 
-##Vantagens dessa abordagem
+## Vantagens dessa abordagem
 
 Facilita testes unitários, porque você pode mockar ICountriesService.
 
