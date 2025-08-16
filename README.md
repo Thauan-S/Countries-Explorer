@@ -46,7 +46,8 @@ Permite trocar implementações sem alterar o MAUI (ex.: trocar API por banco lo
 
 Deixa o projeto mais organizado e escalável, especialmente se for crescer ou integrar outras APIs.
 
-##Instruções para executar o projeto :
+## Instruções para executar o projeto :
+
  1-Clone o repositório com o comando : git clone https://github.com/Thauan-S/Countries-Explorer.git
  
  2-Clique no botão para executar o projeto  <img width="140" height="30" alt="image" src="https://github.com/user-attachments/assets/9a617b73-f55c-4fd5-b1d1-589299a2bf61" />
