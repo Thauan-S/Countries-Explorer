@@ -18,18 +18,25 @@ Aplicativo multiplataforma desenvolvido em .NET MAUI que consome a API [RestCoun
 ## Estrutura do Projeto
 
 CountriesExplorer.sln
-│
-├─ CountriesExplorer/          # Projeto MAUI (UI)
+
+├─ CountriesExplorer/  
+
 │  ├─ Views/
+
 │  ├─ ViewModels/
+
 │  └─ App.xaml
-│
-├─ Domain/                     # Camada de domínio
-│  ├─ Models/                  # Entidades (Country, Currency, etc.)
-│  ├─ Interfaces/              # Interfaces de serviços e repositórios
-│
-├─ Infrastructure/             # Implementações de infraestrutura
-│  ├─ Services/                # Implementação de serviços HTTP, repositórios
+
+├─ Domain/      
+
+│  ├─ Models/   
+
+│  ├─ Interfaces/      
+
+
+├─ Infrastructure/      
+
+│  ├─ Services/               
 
 ## Vantagens dessa abordagem
 
@@ -40,7 +47,7 @@ Permite trocar implementações sem alterar o MAUI (ex.: trocar API por banco lo
 Deixa o projeto mais organizado e escalável, especialmente se for crescer ou integrar outras APIs.
 
 ##Instruções para executar o projeto :
- 1-Clone o repositório com o comando : git clone https://github.com/Thauan-S/Countries-Explorer.git.
+ 1-Clone o repositório com o comando : git clone https://github.com/Thauan-S/Countries-Explorer.git
  
  2-Clique no botão para executar o projeto  <img width="140" height="30" alt="image" src="https://github.com/user-attachments/assets/9a617b73-f55c-4fd5-b1d1-589299a2bf61" />
 
