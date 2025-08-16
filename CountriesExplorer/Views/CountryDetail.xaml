@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+               x:Class="CountriesExplorer.Views.CountryDetail"
+               Size="300,500"
+               Color="Transparent">
+    <toolkit:Popup.Resources>
+        <Style  TargetType="Label">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+        </Style>
+    </toolkit:Popup.Resources>
+    <Frame BackgroundColor="White" 
+           CornerRadius="10" 
+           Padding="20">
+        <StackLayout>
+            <Image Source="{Binding  Country.Flags.Png}" 
+                   HeightRequest="200" 
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center"/>
+            <Label Text="{Binding  Country.Name.Common}" />
+            <Label Text="{Binding Country. Name.Official,StringFormat='Nome oficial: {0}'}" />
+            <Label Text="{Binding  Country.Capital[0], StringFormat='Capital: {0}'}" />
+            <Label Text="{Binding  Country.Region, StringFormat='Região: {0}'}" />
+            <Label Text="Moedas utilizadas:"/>
+            <Label Text="{Binding  Country.Currency.Name,StringFormat='Nome da moeda: {0}'}" />
+            <Label Text="{Binding  Country.CurrencyCode,StringFormat='Sigla: {0}'}" />
+            <Label Text="{Binding  Country.Currency.Symbol,StringFormat='Símbolo: {0}'}" />
+            <Button Text="Fechar" 
+                    Clicked="OnCloseClicked"
+                    Margin="0,20,0,0"/>
+        </StackLayout>
+    </Frame>
+</toolkit:Popup>
